@@ -1,0 +1,19 @@
+body{
+	width:40%;
+	margin:auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+.bio{
+	text-align: justify;
+	font-weight: 300;
+}
+
+.image{
+	margin-top: 50px;
+	font-weight: 300;
+}
+
+.image p{
+	font-size: 12px;
+}
