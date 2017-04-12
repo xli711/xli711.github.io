@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="utf-8"> 
-    <title>Xinhui Li</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-</head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+<head>
 <body>
-    <div class="bio">
-    	<h1>Bio</h1>
-    	<p>Xinhui Li is currently a Master of City Planning Candidate at DUSP, MIT. She is interested in utilizing spatial analytics and data analytics to facilitate design of urban spaces, and use data visualization tools to represent study results and design schemes. Before coming to MIT, Xinhui's research focus included urban green space layout planning considering equitable access, as well as urban residential district design promoting public health. She also worked on landscape architecture projects including stormwater management systems and urban parks. Xinhui holds a Master in Landscape Architecture from Harvard University and a Bachelor of Engineering from Sun Yat-Sen University, China.</p>
-    </div>
-    <div class="image">
-    	<h1>Inspiration</h1>
-    	<a href="http://athenahealthvisualization.com/"><img src="assets/link_img.png" height="200px"></a>
-    	<p>athenahealth by <a href="https://fathom.info/">Fathom Information Design</a></p>
-    </div>
+<div class="container">
+  <div class="title">
+    <h1>2016 General Election - Margin of Victory by County</h1>
+    <p>Percentage Points</p>
+  </div>
+  <div id="map-legend">
+    <ul class='legend-text'>
+      <li id="trump">Trump</li>
+      <li id="clinton">Clinton</li>
+    </ul>
+    <ul class='legend-labels'>
+      <li><span style='background:#b2182b;'></span>>50%</li>
+      <li><span style='background:#d6604d;'></span>25%</li>
+      <li><span style='background:#f4a582;'></span>10%</li>
+      <li><span style='background:#fddbc7;'></span><10%</li>
+      <li><span style='background:#d1e5f0;'></span>>10%</li>
+      <li><span style='background:#92c5de;'></span>10%</li>
+      <li><span style='background:#4393c3;'></span>25%</li>
+      <li><span style='background:#2166ac;'></span>>50%</li>
+    </ul>
+  </div>
+  <div id="map">
+    <svg id="map-svg"></svg>
+  </div>
+  <div class="reference">
+    <p>Data source: <a href="https://townhall.com" target="_blank">townhall.com</a></p>
+  </div>
+</div>
+<div class="container">
+  <div class="title">
+    <h1>2016 General Election - Number of Votes by State</h1>
+  </div>
+  <div class="reference">
+    <p>Data source: <a href="https://townhall.com" target="_blank">townhall.com</a></p>
+  </div>
+  <div id="main">
+    <svg width="960" height="500" id="barchart"></svg>
+  </div>
+
+</div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-array.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo.v1.min.js"></script>
+<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="map.js"></script>
+<script src="barchart.js"></script>
 </body>
-</html>
