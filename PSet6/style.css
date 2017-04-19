@@ -1,0 +1,88 @@
+body{
+  font-family: "Roboto", sans-serif;
+}
+.container{
+  width:100vw;
+  height:100vh;
+  padding-bottom: 30px;
+}
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+#map{
+  width:960px;
+  position: relative;
+  padding:10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.title h1{
+  font-size: 1.2em;
+}
+.title p{
+  color: #777;
+  font-size: 1em;
+}
+
+#map-legend{
+  text-align: center;
+}
+
+#trump{
+  position:absolute;
+  left:33%;
+}
+
+#clinton{
+  position:absolute;
+  right:33%;
+}
+
+.legend-labels{
+  display:inline-block;
+  padding:0;
+  margin-bottom:0;
+}
+
+#map-legend ul li{
+  display: inline;
+  float: left;
+  width: 50px;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 80%;
+}
+
+.legend-labels li span{
+  display: block;
+  float: left;
+  height: 15px;
+  width: 50px;
+}
+
+.reference p{
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#main {
+  position:relative;
+  width: 960px;
+  padding:10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.axis .domain {
+  display: none;
+}
+
+#barchart{
+  position:relative;
+}
